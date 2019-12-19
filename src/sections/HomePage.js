@@ -5,7 +5,7 @@ import { SkillCard } from "../share-components/Cards/SkillCard";
 import webDesign from "../Images/webDesign.png";
 import webDeveloper from "../Images/webDeveloper.png";
 import software from "../Images/software.png";
-import { SocialIcon } from 'react-social-icons';
+// import { SocialIcon } from 'react-social-icons';
 
 
 // https://patricktran.github.io/react-image-fade-in/?knob-opacityTransition%20%28seconds%29=3&knob-src=https%3A%2F%2Fraw.githubusercontent.com%2Fpatricktran%2Freact-image-fade-in%2Fmaster%2Fnismo-dog.jpg&selectedKind=ImageFadeIn&selectedStory=with%20image&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel
@@ -17,10 +17,10 @@ class Homepage extends React.Component{
             <MainContainer>
                 <Quote>Sometimes things are meant to happen but it does not mean it is meant to be.</Quote>
                 <SocialMediaIcon>
-                    <GithubLink url="https://github.com/" />
+                    {/* <GithubLink url="https://github.com/" />
                     <SocialIcon url="https://linkedin.com/jaketrent" />
                     <SocialIcon url="https://email.com/" href="mailto:contact@test.com"/>
-                    <SocialIcon url="https://facebook.com/jaketrent" />
+                    <SocialIcon url="https://facebook.com/jaketrent" /> */}
                 </SocialMediaIcon>
             </MainContainer>
             <SkillContainer>
