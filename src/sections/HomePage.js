@@ -7,11 +7,11 @@ import webDeveloper from "../Images/webDeveloper.png";
 import software from "../Images/software.png";
 // import { SocialIcon } from 'react-social-icons';
 
-
 // https://patricktran.github.io/react-image-fade-in/?knob-opacityTransition%20%28seconds%29=3&knob-src=https%3A%2F%2Fraw.githubusercontent.com%2Fpatricktran%2Freact-image-fade-in%2Fmaster%2Fnismo-dog.jpg&selectedKind=ImageFadeIn&selectedStory=with%20image&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel
 
 class Homepage extends React.Component{
     render(){
+
         return(
         <Wrapper>
             <MainContainer>
@@ -48,7 +48,7 @@ height:auto;
 const Quote = styled.h1`
 font-size: 2.5em;
 width:40%;
-margin: 4% 5%;
+margin: 6% 5%;
 color:#F5B716;
 `
 
@@ -87,9 +87,9 @@ const SocialMediaIcon = styled.div`
 
 `;
 
-const GithubLink = styled(SocialIcon)`
+// const GithubLink = styled(SocialIcon)`
 
-.social-svg-mask{
-    color:black;
-}
-`;
+// .social-svg-mask{
+//     color:black;
+// }
+// `;

@@ -6,12 +6,18 @@ import Calculator from "../Images/calculator.png";
 import InfoRetrieve from "../Images/inforetrieve.png";
 import SimonSays from "../Images/simonsay.png";
 import TicTacToe from "../Images/tictactoe.png";
-
+import { Parallax } from 'react-scroll-parallax';
 
 function Portfolio(){
+
     return(
         <Wrapper>
-
+        <div style={{textAlign: "center"}}>
+            {/* <Parallax className="custom-class" x={[-30, 30]} tagOuter="figure"> */}
+            <Title>Portfolio</Title>
+            {/* </Parallax> */}
+        </div>
+            
         <ContentWrapper>
             <TitleContainer>
                 <CardTitle styling="linear-gradient(0deg, rgba(255,64,3,0) 0%, rgba(255,91,0,1) 70%);" 
@@ -20,8 +26,8 @@ function Portfolio(){
                 </CardTitle>
             </TitleContainer>
             <CardContainer>
-                <PortfolioCard title="Password Generator"/>
-                <PortfolioCard title="Simon Says"/>
+                <PortfolioCard imageCover={""} title="Password Generator"/>
+                <PortfolioCard imageCover={""} title="Simon Says"/>
                 <PortfolioCard imageCover={SimonSays} title="Simon Says"/>
             </CardContainer>
         </ContentWrapper>
@@ -64,12 +70,13 @@ background-color:#fff;
 const ContentWrapper = styled.div`
 display:flex;
 flex-direction:row;
+margin: 4% 0;
 `;
 
 const CardContainer = styled.div`
 display:flex;
 flex-wrap:wrap;
-
+alignItems: center;
 width:70%;
 `;
 
@@ -79,4 +86,8 @@ width:25%;
 display:flex;
 align-items: flex-start; /* Vertical center alignment */
 justify-content: center; /* Horizontal center alignment */
+`;
+
+const Title = styled.h2`
+margin: 4% 0;
 `;

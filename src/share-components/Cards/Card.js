@@ -20,8 +20,7 @@ text-align:center;
 background-color:black;
 width:auto;
 width:100%;
-border-right: 1px solid #FDC500;
-border-left: 1px solid #FDC500;
+border-left: 1.5px solid #FDC500;
 `
 
 const Text = styled.h2`

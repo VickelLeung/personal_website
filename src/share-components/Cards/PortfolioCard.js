@@ -26,6 +26,9 @@ export {PortfolioCard};
 const Wrapper = styled.div`
 text-align:center;
 margin: 0 3%;
+padding:2%;
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+border: 0.5px solid rgba(0,0,0,0.05);
 
 &:hover {
     background-color: rgba(0,0,0,0.05); /* Black w/ opacity */

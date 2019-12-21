@@ -12,9 +12,6 @@ class AboutPage extends React.Component{
                 <Title>About me</Title>
                 <AboutContainer>
                     <MainContainer>
-                    <span style={{fontSize:"3em;", color: "Tomato;"}}>
-                    <i className="fas fa-camera" />
-                    </span>
                         <GeneralContainer>
                         {/* <ImageBox>
                            
@@ -29,21 +26,23 @@ class AboutPage extends React.Component{
                             <Button href={Resume} download variant="contained">Download Resume</Button>
                         </div>
                         </GeneralContainer>
-                    
+                        
                     </MainContainer>
                     <SecondContainer>
-                        <FactBox>
-                            <Header>Fun facts about me</Header>
-                            <BulletPoints>1- I love food</BulletPoints>
-                            <BulletPoints>2- I never broken a bone before</BulletPoints>
-                            <BulletPoints>3- Funko pop collector!</BulletPoints>
-                            <BulletPoints>4- Art/Music/Writing help me escape reality</BulletPoints>
-                            <BulletPoints>5- People drink coffee daily, I drink boba :)</BulletPoints>
-                            <BulletPoints>6- I am scared of height </BulletPoints>
-                            <BulletPoints>7- Mega duper huge fan of Dragon Ball</BulletPoints>
-                            <BulletPoints>8- I won a silver medal for regonial at double badminton</BulletPoints>
-                            <BulletPoints>9- My pr for deadlift, squat and bench are 285/225/140</BulletPoints>
-                        </FactBox>
+                        {/* <FactWrapper> */}
+                            <FactBox>
+                                <Header>Fun facts about me</Header>
+                                <BulletPoints>1- I love food</BulletPoints>
+                                <BulletPoints>2- I never broken a bone before</BulletPoints>
+                                <BulletPoints>3- Funko pop collector!</BulletPoints>
+                                <BulletPoints>4- Art/Music/Writing help me escape reality</BulletPoints>
+                                <BulletPoints>5- People drink coffee daily, I drink boba :)</BulletPoints>
+                                <BulletPoints>6- I am scared of height </BulletPoints>
+                                <BulletPoints>7- Mega duper huge fan of Dragon Ball</BulletPoints>
+                                <BulletPoints>8- I won a silver medal for regonial at double badminton</BulletPoints>
+                                <BulletPoints>9- My pr for deadlift, squat and bench are 285/225/140</BulletPoints>
+                            </FactBox>
+                        {/* </FactWrapper> */}
                     </SecondContainer>
                 </AboutContainer>
 
@@ -71,6 +70,7 @@ const MainContainer = styled.div`
 
 const SecondContainer = styled.div`
 width:40%;
+height:100%;
 border-left: 3px solid black;
 `;
 
@@ -98,8 +98,9 @@ text-align:center;
 const AboutContainer = styled.div`
 display:flex; 
 flex-direction:row;
+height:100%;
 width:100%;
-margin-bottom:10%;
+margin-bottom:5%;
 
 `;
 
@@ -116,4 +117,9 @@ background-color: #413F3F;
 // background-color: #E5E5E5;
 const ImageBox = styled.div`
 
+`;
+
+const FactWrapper = styled.div`
+width:40%;
+border-left: 3px solid black;
 `;

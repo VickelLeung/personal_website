@@ -1,7 +1,7 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import styled from "styled-components";
 
 function Timeline(props){
     return(
@@ -10,15 +10,15 @@ function Timeline(props){
             iconStyle={{ background: "white", color: '#fff' }}
             // icon={<StarIcon />}
         />
-        <i className="fas fa-graduation-cap"></i>
+       
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background:"#F5B716" ,color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    contentArrowStyle={{ borderRight: '7px solid  #F5B716' }}
     date="2012 - 2017"
     iconStyle={{ background: '#F5B716', color: '#fff' }}
     // icon={<WorkIcon />}
-    icon= {<i class="fas fa-graduation-cap"></i>}
+    icon= {<Icon class="fas fa-graduation-cap fa-2x"></Icon>}
   >
     <h3 className="vertical-timeline-element-title">Clerk</h3>
     <h4 className="vertical-timeline-element-subtitle">Sixflags - LaRonde, Qc</h4>
@@ -31,9 +31,10 @@ function Timeline(props){
     className="vertical-timeline-element--education"
     date="2013 - 2015"
     contentStyle={{ background:"black" ,color: '#ffff' }}
+    contentArrowStyle={{ borderRight: '7px solid  black' }}
     iconStyle={{ background: 'black', color: '#fff' }}
     // icon={<SchoolIcon />}
-    icon={<i className="fas fa-graduation-cap"></i>}
+    icon={<i className="fas fa-graduation-cap fa-2x"></i>}
   >
     <h3 className="vertical-timeline-element-title">DEC - Language Profile</h3>
     <h4 className="vertical-timeline-element-subtitle">College degree</h4>
@@ -46,6 +47,7 @@ function Timeline(props){
     className="vertical-timeline-element--education"
     date="2015 - 2017"
     contentStyle={{ background:"black" ,color: '#ffff' }}
+    contentArrowStyle={{ borderRight: '7px solid  black' }}
     iconStyle={{ background: 'black', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
@@ -59,9 +61,10 @@ function Timeline(props){
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background:"#F5B716" ,color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #F5B716' }}
     date="2017 - 2019"
     iconStyle={{ background: '#F5B716', color: 'green' }}
-    // icon={<WorkIcon />}
+    icon={<i class="fas fa-briefcase fa-2x"></i>}
   >
     <h3 className="vertical-timeline-element-title">Team Leader</h3>
     <h4 className="vertical-timeline-element-subtitle">Sixflags - LaRonde, Qc</h4>
@@ -74,6 +77,7 @@ function Timeline(props){
     className="vertical-timeline-element--education"
     date="2017 - 2020"
     contentStyle={{ background:"black" ,color: '#ffff' }}
+    contentArrowStyle={{ borderRight: '7px solid  black' }}
     iconStyle={{ background: 'black', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
@@ -87,9 +91,10 @@ function Timeline(props){
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background:"#F5B716" ,color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #F5B716' }}
     date="2018 - 2019"
     iconStyle={{ background: '#F5B716', color: '#fff' }}
-    // icon={<WorkIcon />}
+    icon={<i class="fas fa-briefcase fa-2x"></i>}
   >
     <h3 className="vertical-timeline-element-title">Web Developer</h3>
     <h4 className="vertical-timeline-element-subtitle">Skylow, Qc</h4>
@@ -102,8 +107,8 @@ function Timeline(props){
     className="vertical-timeline-element--work"
     contentStyle={{  color: '#fff' }}
     date="Present"
-    iconStyle={{ background: 'gray', color: '#fff' }}
-    // icon={<WorkIcon />}
+    iconStyle={{ background: 'white', color: '#fff' }}
+    // icon={}
   >
    
   </VerticalTimelineElement>
@@ -113,3 +118,7 @@ function Timeline(props){
 }
 
 export {Timeline}
+
+const Icon = styled.i`
+
+`;
