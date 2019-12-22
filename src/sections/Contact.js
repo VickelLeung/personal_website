@@ -15,9 +15,9 @@ function Contact (){
             <MainContainer>
                 <Information>
                     <h2>Contact information</h2>
-                    <ContactCard >Vickelleung@gmail.com</ContactCard>
-                    <ContactCard >514-815-8638</ContactCard>
-                    <ContactCard >Montreal, Qc</ContactCard>
+                    <ContactCard ><i className="fas fa-envelope"/> Vickelleung@gmail.com</ContactCard>
+                    <ContactCard > <i className="fas fa-phone"/> 514-815-8638</ContactCard>
+                    <ContactCard > <i className="fas fa-map-marker-alt"/> Montreal, Qc</ContactCard>
                 </Information>
 
                 <MessageBox>
@@ -25,14 +25,14 @@ function Contact (){
                     <InputField
                     style={{margin: '5% 0'}}
                         id="input_name"
-                        label="name"
+                        label="Name"
                         type="text"
                         variant="outlined"
                     />
                      <InputField
                      style={{margin: '5% 0'}}
                         id="email"
-                        label="email"
+                        label="Email"
                         type="email"
                         variant="outlined"
                     />
@@ -47,7 +47,7 @@ function Contact (){
                     />
                     
                     
-                    <SubmitBtn variant="lined" >Default</SubmitBtn>
+                    <SubmitBtn variant="lined" >Submit</SubmitBtn>
                 </MessageBox>
             </MainContainer>
 
@@ -58,7 +58,9 @@ function Contact (){
 export {Contact};
 
 const Information = styled.div`
-margin: 10% 6%;
+text-align: left;
+margin: 6% 6%;
+padding: 3%;
 border:2px solid black;
 width:50%;
 `;
@@ -66,7 +68,7 @@ width:50%;
 const MessageBox = styled.div`
 display:flex;
 flex-direction:column;
-margin: 10% 6%;
+margin: 6% 6%;
 padding: 3%;
 border:2px solid black;
 width:50%;

@@ -4,6 +4,7 @@ import { Timeline } from "../component/timeline/Timeline";
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Resume from "../resume/resume.pdf";
+import { Hobby } from "../component/Hobby/Hobby";
 
 class AboutPage extends React.Component{
     render(){
@@ -26,25 +27,30 @@ class AboutPage extends React.Component{
                             <Button href={Resume} download variant="contained">Download Resume</Button>
                         </div>
                         </GeneralContainer>
-                        
+                    
+
                     </MainContainer>
                     <SecondContainer>
                         {/* <FactWrapper> */}
                             <FactBox>
                                 <Header>Fun facts about me</Header>
                                 <BulletPoints>1- I love food</BulletPoints>
-                                <BulletPoints>2- I never broken a bone before</BulletPoints>
+                                <BulletPoints>2- I have never broken a bone before</BulletPoints>
                                 <BulletPoints>3- Funko pop collector!</BulletPoints>
                                 <BulletPoints>4- Art/Music/Writing help me escape reality</BulletPoints>
                                 <BulletPoints>5- People drink coffee daily, I drink boba :)</BulletPoints>
-                                <BulletPoints>6- I am scared of height </BulletPoints>
+                                <BulletPoints>6- I am scared of heights </BulletPoints>
                                 <BulletPoints>7- Mega duper huge fan of Dragon Ball</BulletPoints>
-                                <BulletPoints>8- I won a silver medal for regonial at double badminton</BulletPoints>
-                                <BulletPoints>9- My pr for deadlift, squat and bench are 285/225/140</BulletPoints>
+                                <BulletPoints>8- I won a silver medal for regional at double badminton</BulletPoints>
+                                <BulletPoints>9- My pr for deadlift, squat and bench are 295/275/140</BulletPoints>
                             </FactBox>
                         {/* </FactWrapper> */}
                     </SecondContainer>
+                    
                 </AboutContainer>
+                
+                <Title>Hobby</Title>
+                <Hobby />
 
                 <TimeContainer>
                     <Timeline />

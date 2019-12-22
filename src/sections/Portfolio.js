@@ -26,7 +26,7 @@ function Portfolio(){
                 </CardTitle>
             </TitleContainer>
             <CardContainer>
-                <PortfolioCard imageCover={""} title="Password Generator"/>
+                <PortfolioCard imageCover={""} title="Password Generator" />
                 <PortfolioCard imageCover={""} title="Simon Says"/>
                 <PortfolioCard imageCover={SimonSays} title="Simon Says"/>
             </CardContainer>
