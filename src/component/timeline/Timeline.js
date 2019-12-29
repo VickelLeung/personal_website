@@ -37,7 +37,7 @@ function Timeline(props){
     <h3 className="vertical-timeline-element-title">Clerk</h3>
     <h4 className="vertical-timeline-element-subtitle">Sixflags - LaRonde, Qc</h4>
     <p>
-     Customer Service, 
+     Customer Service 
     </p>
   </Vertical>
 

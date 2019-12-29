@@ -20,13 +20,16 @@ class AboutPage extends React.Component{
                         <div>
                             <InformationBox>
                                 <Header>Vickel Leung</Header>
-                                <SubTitle>Web Developer</SubTitle>
+                                {/* <SubTitle>Web Developer</SubTitle> */}
                                 <Information>
-                                    Hello there! <br/>
+                                    Hello there! <br/><br />
                                     
-                                    I am a web developer that enjoys creating things from scratch to something awesome! <br />
-                                    Strong passion in learning new technology and using it to improve my skill. <br />
-                                    Ocassionaly, I am not just all coding. If I have free time, I do make the most out of it by relaxing my body. <br />
+                                    I am a web developer that enjoys creating things from scratch to something awesome!
+                                    Strong passion in learning new technology and using it to improve my skill. <br /> <br />
+
+                                    I am not just all coding. If I have free time, I do make the most out of it by relaxing my body.
+                                    My belief is that a healthy body will give a healthy mind. For that reason, I always try to eat heatlhy and go to gym regularly. <br /> <br/>
+                                    
                                     I want to make a difference in the world by writing one line code at a time.
                                     Thanks for reading my page.
 
