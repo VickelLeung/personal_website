@@ -19,8 +19,16 @@ class AboutPage extends React.Component{
                         </ImageBox> */}
                         <div>
                             <InformationBox>
-                                <Header>Hello! I'm Vickel</Header>
-                                <Information>Thanks for reading my page. I am a young aspiring programmer that enjoy coding a lot!
+                                <Header>Vickel Leung</Header>
+                                <SubTitle>Web Developer</SubTitle>
+                                <Information>
+                                    Hello there! <br/>
+                                    
+                                    I am a web developer that enjoys creating things from scratch to something awesome! <br />
+                                    Strong passion in learning new technology and using it to improve my skill. <br />
+                                    Ocassionaly, I am not just all coding. If I have free time, I do make the most out of it by relaxing my body. <br />
+                                    I want to make a difference in the world by writing one line code at a time.
+                                    Thanks for reading my page.
 
                                 </Information>
                             </InformationBox>
@@ -34,11 +42,11 @@ class AboutPage extends React.Component{
                         {/* <FactWrapper> */}
                             <FactBox>
                                 <Header>Fun facts about me</Header>
-                                <BulletPoints>1- I love food</BulletPoints>
+                                <BulletPoints>1- I love trying new food unless it's bugs</BulletPoints>
                                 <BulletPoints>2- I have never broken a bone before</BulletPoints>
                                 <BulletPoints>3- Funko pop collector!</BulletPoints>
                                 <BulletPoints>4- Art/Music/Writing help me escape reality</BulletPoints>
-                                <BulletPoints>5- People drink coffee daily, I drink boba :)</BulletPoints>
+                                <BulletPoints>5- People drink coffee daily, I drink tea :)</BulletPoints>
                                 <BulletPoints>6- I am scared of heights </BulletPoints>
                                 <BulletPoints>7- Mega duper huge fan of Dragon Ball</BulletPoints>
                                 <BulletPoints>8- I won a silver medal for regional at double badminton</BulletPoints>
@@ -64,6 +72,8 @@ export {AboutPage};
 
 const Title = styled.h1`text-align:center;`;
 
+const SubTitle = styled.h3``;
+
 const Wrapper = styled.div`
 height:auto;
 `
@@ -88,7 +98,9 @@ margin-bottom: 4%;
 
 const Header = styled.h1``;
 
-const Information = styled.p``;
+const Information = styled.p`
+text-align:left;
+`;
 
 const BulletPoints = styled.p`
 text-align:justify;

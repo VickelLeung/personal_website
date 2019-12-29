@@ -25,7 +25,7 @@ class Homepage extends React.Component{
             </MainContainer>
             <SkillContainer>
                 <LanguageContainer>
-                    <SkillCard title="Language and tools" >Javascript</SkillCard>
+                    <SkillCard title="Language and tools" >Javascript, Java, C++, NodeJS, MySql, MongoDB, Github, Gitlab, Visual Studio, Eclipse, WindowsOS, MacOS</SkillCard>
                 </LanguageContainer>
                 <CardContainer>
                     <Card image={webDesign}>UI/UX</Card>

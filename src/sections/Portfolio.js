@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { PortfolioCard } from "../share-components/Cards/PortfolioCard";
 import { CardTitle } from "../share-components/Cards/CardTitle";
-import Calculator from "../Images/calculator.png";
-import InfoRetrieve from "../Images/inforetrieve.png";
-import SimonSays from "../Images/simonsay.png";
-import TicTacToe from "../Images/tictactoe.png";
+import Calculator from "../Images/portfolio/calculator.png";
+import InfoRetrieve from "../Images/portfolio/inforetrieve.png";
+import SimonSays from "../Images/portfolio/simonsay.png";
+import TicTacToe from "../Images/portfolio/tictactoe.png";
 import { Parallax } from 'react-scroll-parallax';
 
 function Portfolio(){
@@ -26,9 +26,10 @@ function Portfolio(){
                 </CardTitle>
             </TitleContainer>
             <CardContainer>
-                <PortfolioCard imageCover={""} title="Password Generator" />
-                <PortfolioCard imageCover={""} title="Simon Says"/>
-                <PortfolioCard imageCover={SimonSays} title="Simon Says"/>
+            
+                <PortfolioCard icon="fab fa-java" lang="Java" imageCover={Calculator} title="Password Generator" />
+                <PortfolioCard icon="fab fa-react fa-1x" lang="ReactJS" imageCover={SimonSays} title="Simon Says"/>
+                <PortfolioCard icon="fab fa-react fa-1x" lang="ReactJS" imageCover={SimonSays} title="Simon Says"/>
             </CardContainer>
         </ContentWrapper>
         <ContentWrapper>
@@ -38,9 +39,9 @@ function Portfolio(){
                 </CardTitle>
             </TitleContainer>
             <CardContainer>
-                <PortfolioCard imageCover={InfoRetrieve} title="Information Retrieval" />
-                <PortfolioCard imageCover={TicTacToe} title="Tic Tac Toe"/>
-                <PortfolioCard imageCover={Calculator} title="Calculator"/>
+                <PortfolioCard icon="fab fa-java fa-1x" lang="Java" imageCover={InfoRetrieve} title="Information Retrieval" />
+                <PortfolioCard icon="fab fa-java fa-2x" lang="Java" imageCover={TicTacToe} title="Tic Tac Toe"/>
+                <PortfolioCard icon="fab fa-java fa-2x" lang="Java" imageCover={Calculator} title="Calculator"/>
                 <PortfolioCard imageCover={""} title="Risk"/>
             </CardContainer>
         </ContentWrapper>
