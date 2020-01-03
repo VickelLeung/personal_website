@@ -27,8 +27,10 @@ const Text = styled.h2`
 color:#F5B716`;
 
 const Image = styled.img`
+vertical-align:middle;
 height:auto;
 width:auto;
 height:7em;
 width:7em;
+padding-top: 4%;
 `;
