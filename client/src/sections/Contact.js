@@ -27,36 +27,36 @@ submitInfo = () =>{
     // }
     const {name, email, message} = this.state;
 
-    axios.post('/send', { name, email, message })
-    .then((result) => {
-     console.log("posted" + result);
-    });
+    // axios.post('/send', { name, email, message })
+    // .then((result) => {
+    //  console.log("posted" + result);
+    // });
 
-    console.log("it worked!");
+    // console.log("it worked!");
 
-    // fetch('http://localhost:3001/send', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify({
+    fetch('http://localhost:3001/send', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
    
-    //       name : name,
-    //       email : email,
-    //       message : message
+          name : name,
+          email : email,
+          message : message
           
-    //     })
-    //     }).then((response) => response.json())
-    //         .then((responseJson) => {
-    //             this.setState({name:"",email:"",message:""})
-    //         this.refs.name.value=""; 
-    //           // Showing response message coming from server after inserting records.
-    //           console.log(responseJson);
+        })
+        }).then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({name:"",email:"",message:""})
+            this.refs.name.value=""; 
+              // Showing response message coming from server after inserting records.
+              console.log(responseJson);
             
-    //         }).catch((error) => {
-    //           console.error(error);
-    //         });
+            }).catch((error) => {
+              console.error(error);
+            });
 
            
 }   
