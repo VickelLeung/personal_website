@@ -34,7 +34,7 @@ submitInfo = () =>{
 
     // console.log("it worked!");
 
-    fetch('http://localhost:3001/send', {
+    fetch('http://vickelwebsite.herokuapp.com/send', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
