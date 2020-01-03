@@ -40,7 +40,10 @@ app.post("/send", (req, res)=>{
          auth: { 
              user:process.env.EMAIL,
              pass:process.env.PASSWORD
-         }
+         },
+         tls:{
+            rejectUnauthorized:false
+          }
      })
     
     transporter.sendMail(mailOptions, (err)=>{
