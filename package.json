@@ -6,8 +6,9 @@
   "scripts": {
     "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
     "client":"cd client && npm start",
-    "server":"cde backend && node server.js",
-    "heroku-postbuild" : "npm install --prefix client && npm run build --prefix client"
+    "server":"cd backend && node server.js",
+    "heroku-postbuild" : "npm install --prefix client && npm run build --prefix client && npm run build --prefix server",
+    "dev":"concurrently \"cd backend && node server.js\" \"cd client && npm start\""
   },
   "repository": {
     "type": "git",
