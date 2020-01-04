@@ -34,7 +34,7 @@ submitInfo = () =>{
 
     // console.log("it worked!");
 
-    fetch('/send', {
+    fetch('/api/send', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
