@@ -21,7 +21,7 @@ const router = express.Router();
 //     console.log("mongose connection established.");
 //     })
 
-app.post("/api/send", (req, res)=>{
+app.post("/send", (req, res)=>{
     console.log(req.body);
 
     let mailOptions = {
