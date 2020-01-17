@@ -97,6 +97,10 @@ const InformationBox = styled.div`
 border:2px solid black;
 padding:4%;
 margin-bottom: 4%;
+
+@media screen and (max-width: 420px) {
+   width: 100%;
+}
 `;
 
 const Header = styled.h1``;
@@ -114,6 +118,10 @@ border:2px solid black;
 padding:4%;
 margin:0 8%;
 text-align:center;
+
+@media screen and (max-width: 420px) {
+    width: 100%;
+ }
 `;
 
 const AboutContainer = styled.div`
@@ -122,6 +130,10 @@ flex-direction:row;
 height:100%;
 width:100%;
 margin-bottom:5%;
+
+@media screen and (max-width: 420px) {
+    flex-direction:column;
+}
 
 `;
 

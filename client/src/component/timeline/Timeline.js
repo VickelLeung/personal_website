@@ -90,7 +90,7 @@ function Timeline(props){
     className="vertical-timeline-element--work"
     contentStyle={{ background:"#F5B716" ,color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #F5B716' }}
-    date="2018 - 2019"
+    date="Mar. 2019 - Nov. 2019"
     iconStyle={{ background: '#F5B716', color: '#fff' }}
     icon={<i class="fas fa-briefcase fa-2x" />}
   >

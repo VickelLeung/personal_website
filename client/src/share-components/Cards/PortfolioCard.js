@@ -15,7 +15,7 @@ import Img from "../../Images/portfolio/calculator.png";
 
 function PortfolioCard(props){
 
-  const { imageCover, title, icon, skill } = props;
+  const { imageCover, title, icon, skill, projectLink } = props;
 
   let chip = skill != undefined && skill.map((item)=>{
     return  <Chip label={<i className={item.icon}><span> {item.name}</span></i>}></Chip>
@@ -51,7 +51,8 @@ function PortfolioCard(props){
                   <Chip label={<i className={icon}><span> ReactJs</span></i>}></Chip>
                 </LanguageContainer> */}
                 <CodeContainer>
-                <Button href="http://www.google.com" target="_blank" ><i class="fas fa-file-code fa-2x" /></Button>
+                  {projectLink === undefined? null: <Button href={projectLink} target="_blank" ><i class="fas fa-file-code fa-2x" /></Button>}
+                
                 </CodeContainer>
             </LinkContainer>
           </CardActions>
@@ -69,10 +70,13 @@ text-align:center;
 margin: 0 3%;
 margin-bottom: 4%;
 
-
 &:hover {
     background-color: rgba(0,0,0,0.05); /* Black w/ opacity */
   }
+
+  @media screen and (max-width: 420px) {
+    width: 50%;
+ }
 
 `;
 

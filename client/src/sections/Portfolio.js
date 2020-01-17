@@ -26,9 +26,18 @@ function Portfolio(){
                 </CardTitle>
             </TitleContainer>
             <CardContainer>
-                <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} imageCover={Calculator} title="Password Generator" />
-                <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} imageCover={SimonSays} title="Simon Says"/>
-                <PortfolioCard  skill={[{name: "java", icon: "test"},{name: "jsp", icon: "test2"}]} imageCover={SimonSays} title="Book repository"/>
+                <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} 
+                    imageCover={Calculator} title="Password Generator"
+                    projectLink="https://github.com/VickelLeung/Password_generator_in_react"
+                    />
+                <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} 
+                    imageCover={SimonSays} title="Simon Says"
+                    projectLink="https://github.com/VickelLeung/Simon_Says"
+                    />
+                <PortfolioCard  skill={[{name: "java", icon: "fab fa-java fa-1x}"},{name: "jsp", icon: "test2"}, {name:"MySql"}]} 
+                    imageCover={SimonSays} title="Book repository"
+                    projectLink="https://github.com/VickelLeung/SOEN387A2"
+                    />
             </CardContainer>
         </ContentWrapper>
         <ContentWrapper>
@@ -38,10 +47,19 @@ function Portfolio(){
                 </CardTitle>
             </TitleContainer>
             <CardContainer>
-                <PortfolioCard skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} imageCover={InfoRetrieve} title="Information Retrieval" />
-                <PortfolioCard skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} imageCover={TicTacToe} title="Tic Tac Toe"/>
-                <PortfolioCard skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} imageCover={Calculator} title="Calculator"/>
-                <PortfolioCard skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} imageCover={""} title="Risk"/>
+                <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
+                    imageCover={InfoRetrieve} title="Information Retrieval" 
+                    />
+                <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
+                    imageCover={TicTacToe} title="Tic Tac Toe"
+                    projectLink="https://github.com/VickelLeung/TicTacToe_2.0_Android"
+                    />
+                <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
+                    imageCover={Calculator} title="Calculator"/>
+                <PortfolioCard skill={[{name:"C++", icon:""}]} 
+                    imageCover={""} title="Risk"
+                    projectLink="https://github.com/VickelLeung/Risk-game"
+                    />
             </CardContainer>
         </ContentWrapper>
 
@@ -71,6 +89,10 @@ const ContentWrapper = styled.div`
 display:flex;
 flex-direction:row;
 margin: 4% 0;
+
+@media screen and (max-width: 420px) {
+    flex-direction: column;
+ }
 `;
 
 const CardContainer = styled.div`
@@ -81,11 +103,14 @@ width:70%;
 `;
 
 const TitleContainer = styled.div`
-
 width:25%;
 display:flex;
 align-items: flex-start; /* Vertical center alignment */
 justify-content: center; /* Horizontal center alignment */
+
+@media screen and (max-width: 420px) {
+    width:100%;
+ }
 `;
 
 const Title = styled.h2`

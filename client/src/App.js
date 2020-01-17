@@ -62,9 +62,7 @@ render(){
             <AboutPage />
           </section>
           <section ref={(section) => { this.portfolio = section; }} >
-
-              <Portfolio />
-           
+          <Portfolio /> 
           </section>
           <section ref={(section) => { this.contact = section; }}>
             <Contact />
@@ -78,8 +76,7 @@ render(){
 export default App;
 
 const Wrapper = styled.div`
-width:auto;
-min-width:50em;
+
 `;
 
 const Nav = styled(Headroom)`

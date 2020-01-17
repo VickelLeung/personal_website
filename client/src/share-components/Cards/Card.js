@@ -22,6 +22,11 @@ background-color:black;
 width:auto;
 width:100%;
 border-left: 1.5px solid #FDC500;
+
+@media screen and (max-width: 420px) {
+    border-left: 1.5px solid black;
+    border-top: 1.5px solid #FDC500;
+}
 `
 
 const Text = styled.h2`

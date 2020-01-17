@@ -8,59 +8,6 @@ import axios from 'axios';
 
 class Contact extends Component{
 
-state = {
-    name:"",
-    email:"",
-    message:"",
-}
-
-// verifyInput=()=>{
-//     if()
-//     return true;
-
-//     return false;
-// }
-
-submitInfo = () =>{
-    // if(this.verifyInput()){
-
-    // }
-    const {name, email, message} = this.state;
-
-    // axios.post('/send', { name, email, message })
-    // .then((result) => {
-    //  console.log("posted" + result);
-    // });
-
-    // console.log("it worked!");
-
-    fetch('http://localhost:8080/send', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-   
-          name : name,
-          email : email,
-          message : message
-          
-        })
-        }).then((response) => response.json())
-            .then((responseJson) => {
-                this.setState({name:"",email:"",message:""})
-            this.refs.name.value=""; 
-              // Showing response message coming from server after inserting records.
-              console.log(responseJson);
-            
-            }).catch((error) => {
-              console.error(error);
-            });
-
-           
-}   
-
 render(){
     return(
         <div>
@@ -68,7 +15,6 @@ render(){
                 <Title>Contact</Title>
             </TitleContainer>
             
-
             <MainContainer>
                 <Information>
                     <h2>Contact information</h2>
@@ -83,37 +29,42 @@ render(){
                 </Information>
 
                 <MessageBox>
-                    <h2>Send me a message</h2>
-           
-                    <InputField
-                        style={{margin: '5% 0'}}
+                <form name="contact" method="post">
+                <h2>Send me a message </h2>
+                <input type="hidden" name="form-name" value="contact" />
+       
+                <InputField
+                        style={{margin: '5% 0',width: "100%"}}
                         id="input_name"
                         label="Name"
+                        name="name"
                         type="text"
                         variant="outlined"
                         ref="name"
-                        onChange={(e) => this.setState({ name: e.target.value })}
                     />
-                     <InputField
-                        style={{margin: '5% 0'}}
+
+                <InputField
+                        style={{margin: '5% 0', width:"100% "}}
                         id="email"
                         label="Email"
+                        name="email"
                         type="email"
                         variant="outlined"
-                        onChange={(e) => this.setState({ email: e.target.value })}
                     />
-            
-                    <InputField
-                        style={{margin: '5% 0'}}
+
+                <InputField
+                        style={{margin: '5% 0', width:"100%"}}
                         id="message"
+                        name="message"
                         label="Write your message here"
                         multiline
                         rows="4"
                         variant="outlined"
-                        onChange={(e) => this.setState({ message: e.target.value })}
                     />
-                   
-                    <SubmitBtn onClick={this.submitInfo} variant="lined" >Submit</SubmitBtn>
+                    <p>
+                        <SubmitBtn type="submit">Send</SubmitBtn>
+                    </p>
+                    </form>
                 </MessageBox>
             </MainContainer>
 
@@ -129,8 +80,12 @@ text-align: left;
 margin: 6% 6%;
 padding: 3%;
 border:2px solid black;
+border-radius: 2.5%;
 width:50%;
 
+@media screen and (max-width: 420px) {
+   width: 70%;
+ }
 `;
 
 const MessageBox = styled.div`
@@ -139,7 +94,12 @@ flex-direction:column;
 margin: 6% 6%;
 padding: 3%;
 border:2px solid black;
+border-radius: 2.5%;
 width:50%;
+
+@media screen and (max-width: 420px) {
+    width: 70%;
+ }
 `;
 
 const MainContainer = styled.div`
@@ -148,6 +108,12 @@ flex-direction:row;
 text-align:center;
 height:100%;
 width:100%;
+
+@media screen and (max-width: 420px) {
+    flex-direction:column;
+    align-item:center;
+    justify-content:center;
+ }
 `;
 
 const TitleContainer = styled.div`

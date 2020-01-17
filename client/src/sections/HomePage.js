@@ -17,9 +17,9 @@ class Homepage extends React.Component{
         <Wrapper>
             <MainContainer>
                 <Quote>Sometimes things are meant to happen but it does not mean it is meant to be.</Quote>
-                <SocialMediaIcon>
+                {/* <SocialMediaIcon>
                    <SocialContainer />
-                </SocialMediaIcon>
+                </SocialMediaIcon> */}
             </MainContainer>
             <SkillContainer>
                 <LanguageContainer>
@@ -72,6 +72,13 @@ height:auto;
 min-height: 60vh;
 border: 1px solid black;
 background-color:#434242;
+
+@media screen and (max-width: 420px) {
+
+    height:auto;
+    min-height: 50vh;
+}
+
 `;
 
 const SkillContainer = styled.div`
@@ -80,30 +87,33 @@ flex-direction:row;
 height:auto;
 min-height: 35vh;
 width:100%;
+
+@media screen and (max-width: 420px) {
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    min-height: 35vh;
+    width:100%;
+}
 `
 
 const LanguageContainer = styled.div`
 background-color:#FDC500;
-
+@media screen and (max-width: 420px) {
+   width:100%;
+}
 `;
 
 const CardContainer = styled.div`
 display:flex;
 flex-direction:row;
 width:60%;
+@media screen and (max-width: 420px) {
+    width:100%;
+    flex-direction:column;
+ }
 `;
 
 const SocialMediaIcon = styled.div`
 
 `;
-
-// const Icons = styled(SocialIcon)`
-// padding: 0 1%;
-// `;
-
-// const GithubLink = styled(SocialIcon)`
-
-// .social-svg-mask{
-//     color:black;
-// }
-// `;
