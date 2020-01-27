@@ -42,10 +42,8 @@ render(){
         <Nav>
         <TabContainer
         value={this.state.currentTab}
-        indicatorColor="primary"
-
-        textColor="primary"
         aria-label="navigation"
+       
         centered
       >
           <Tab style={linkCss} onClick={()=>this.combineFunction(0, this.home)} label="Home" />
@@ -87,8 +85,21 @@ const Nav = styled(Headroom)`
 const TabContainer = styled(Tabs)`
 background-color: rgba(0,0,0, 0.6);
 height: 4em;
+
 .PrivateTabIndicator-colorPrimary-26 {
   background-color:orange;
+}
+
+.PrivateTabIndicator-colorSecondary-27 {
+  background-color:orange;   
+}
+
+.MuiTabs-indicator{
+  background-color:orange; 
+}
+
+.jss25 jss27 MuiTabs-indicator{
+  background-color:orange; 
 }
 
 `

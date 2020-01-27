@@ -13,7 +13,7 @@ const HobbyCard = (props) =>{
                 // ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
-                style={{ width: '200px', height: '200px'}} /// these are optional style, it is not necessary
+                style={{ width: '12em', height: '12em'}} /// these are optional style, it is not necessary
             >
                 <FrontSide
                 style={{
@@ -44,9 +44,13 @@ const HobbyCard = (props) =>{
 export {HobbyCard};
 
 const Wrapper = styled.div`
-margin: 2% 2%;
 height:100%;
 width:100%;
+
+@media screen and (max-width: 420px) {
+  text-align:center;
+ }
+
 `;
 
 const Title = styled.h2`

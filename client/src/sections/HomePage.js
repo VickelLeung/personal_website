@@ -65,6 +65,15 @@ width:40%;
 margin: 0 5%;
 padding-top: 12%;
 color:#F5B716;
+
+
+@media screen and (max-width: 420px) {
+    justify-content:center
+    text-align:center;
+    font-size: 2em;
+    width: 70%;
+   
+   }
 `
 
 const MainContainer = styled.div`
@@ -99,6 +108,7 @@ width:100%;
 
 const LanguageContainer = styled.div`
 background-color:#FDC500;
+width:40%;
 @media screen and (max-width: 420px) {
    width:100%;
 }

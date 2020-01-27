@@ -35,12 +35,11 @@ class AboutPage extends React.Component{
 
                                 </Information>
                             </InformationBox>
-                            <Button href={Resume} download variant="contained">Download Resume</Button>
+                            <ResumeBtn style={{backgroundColor:"black", height:"4em", width:"12em"}} href={Resume} download variant="contained">Download Resume</ResumeBtn>
                         </div>
                         </GeneralContainer>
-                    
-
                     </MainContainer>
+
                     <SecondContainer>
                         {/* <FactWrapper> */}
                             <FactBox>
@@ -97,6 +96,7 @@ const InformationBox = styled.div`
 border:2px solid black;
 padding:4%;
 margin-bottom: 4%;
+border-radius: 3%;
 
 @media screen and (max-width: 420px) {
    width: 100%;
@@ -118,6 +118,7 @@ border:2px solid black;
 padding:4%;
 margin:0 8%;
 text-align:center;
+border-radius: 3%;
 
 @media screen and (max-width: 420px) {
     width: 100%;
@@ -134,7 +135,6 @@ margin-bottom:5%;
 @media screen and (max-width: 420px) {
     flex-direction:column;
 }
-
 `;
 
 const GeneralContainer = styled.div`
@@ -155,4 +155,12 @@ const ImageBox = styled.div`
 const FactWrapper = styled.div`
 width:40%;
 border-left: 3px solid black;
+`;
+
+const ResumeBtn = styled(Button)`
+
+.MuiButton-label{
+    color: white;
+}
+
 `;

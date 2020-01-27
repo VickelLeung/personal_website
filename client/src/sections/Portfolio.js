@@ -29,14 +29,18 @@ function Portfolio(){
                 <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} 
                     imageCover={Calculator} title="Password Generator"
                     projectLink="https://github.com/VickelLeung/Password_generator_in_react"
+                    description="A web application that generate random password for user. 
+                    It also has the options to save into firebase database so user does not have to remember it."
                     />
                 <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} 
                     imageCover={SimonSays} title="Simon Says"
                     projectLink="https://github.com/VickelLeung/Simon_Says"
+                    description="A fun game where user click on the sequence of colors after they are being showed a popup of colors."
                     />
-                <PortfolioCard  skill={[{name: "java", icon: "fab fa-java fa-1x}"},{name: "jsp", icon: "test2"}, {name:"MySql"}]} 
+                <PortfolioCard  skill={[{name: "Java", icon: "fab fa-java fa-1x}"},{name: "Jsp", icon: "test2"}, {name:"MySql"}]} 
                     imageCover={SimonSays} title="Book repository"
                     projectLink="https://github.com/VickelLeung/SOEN387A2"
+                    description="A book repository that keeps tracks of all records of any type of books."
                     />
             </CardContainer>
         </ContentWrapper>
@@ -49,16 +53,26 @@ function Portfolio(){
             <CardContainer>
                 <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
                     imageCover={InfoRetrieve} title="Information Retrieval" 
+                    description="An information retrieval program that used spimi algorithm to 
+                    simulate passing and indexing with limited memory. This programs will built a dictionary that allows to find the number of occurence of words in a text 
+                    documents. It can also estimate the relevance documents using bm25. "
+                
                     />
                 <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
                     imageCover={TicTacToe} title="Tic Tac Toe"
                     projectLink="https://github.com/VickelLeung/TicTacToe_2.0_Android"
+                    description="A very simple android applications about tic tac toe where using choose to either play against the computer or another player."
                     />
                 <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
-                    imageCover={Calculator} title="Calculator"/>
+                    imageCover={Calculator} title="Calculator"
+                    description="A calculator built with Java and Swing as interface. 
+                    It is a basic calculator with only simple operations such as addition, substractions, multiplications and division. "
+                    />
                 <PortfolioCard skill={[{name:"C++", icon:""}]} 
                     imageCover={""} title="Risk"
                     projectLink="https://github.com/VickelLeung/Risk-game"
+                    description="A risk game made in C++ that simulate the same concepts of the board game of risk, where each play tries to conquer other territory. 
+                    It is implemented with Round-Robin and using observer pattern to notify other components."
                     />
             </CardContainer>
         </ContentWrapper>
@@ -100,6 +114,11 @@ display:flex;
 flex-wrap:wrap;
 alignItems: center;
 width:70%;
+
+@media screen and (max-width: 420px) {
+    width:100%;
+    justify-content:center;
+ }
 `;
 
 const TitleContainer = styled.div`

@@ -50,6 +50,7 @@ render(){
                         name="email"
                         type="email"
                         variant="outlined"
+                        required
                     />
 
                 <InputField
@@ -60,6 +61,7 @@ render(){
                         multiline
                         rows="4"
                         variant="outlined"
+                        required
                     />
                     <p>
                         <SubmitBtn type="submit">Send</SubmitBtn>
@@ -85,6 +87,7 @@ width:50%;
 
 @media screen and (max-width: 420px) {
    width: 70%;
+   align-self: center;
  }
 `;
 
@@ -99,6 +102,7 @@ width:50%;
 
 @media screen and (max-width: 420px) {
     width: 70%;
+    align-self: center;
  }
 `;
 
@@ -124,7 +128,6 @@ const Title = styled.h2``;
 const InputField = styled(TextField)`
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
     border-color: #FDC500;
-    
 }
 
 .MuiOutlinedInput-root.Mui-focused {

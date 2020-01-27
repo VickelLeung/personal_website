@@ -15,14 +15,13 @@ import Img from "../../Images/portfolio/calculator.png";
 
 function PortfolioCard(props){
 
-  const { imageCover, title, icon, skill, projectLink } = props;
+  const { imageCover, title, description ,icon, skill, projectLink } = props;
 
   let chip = skill != undefined && skill.map((item)=>{
     return  <Chip label={<i className={item.icon}><span> {item.name}</span></i>}></Chip>
   })
 
-    return(
-        
+    return(      
         <Wrapper>
           <Card >   
             <CardMedia
@@ -38,8 +37,7 @@ function PortfolioCard(props){
                 {title}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+               {description}
               </Typography>
               {chip}
 
@@ -76,6 +74,7 @@ margin-bottom: 4%;
 
   @media screen and (max-width: 420px) {
     width: 50%;
+   
  }
 
 `;

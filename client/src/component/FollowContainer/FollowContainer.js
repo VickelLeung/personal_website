@@ -31,6 +31,7 @@ flex-direction:row;
 width:100%;
 @media screen and (max-width: 420px) {
     flex-wrap:wrap;
+    justify-content:center;
  }
 `;
 
@@ -40,5 +41,6 @@ color:black;
 margin: 0.6% 0.6%
 @media screen and (max-width: 420px) {
     flex: 0 0 25%;
+  
  }
 `;

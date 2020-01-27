@@ -22,6 +22,11 @@ const Wrapper = styled.div`
     width:auto;
     min-width: 15em;
     background: linear-gradient(0deg, rgba(65,66,66,0) 0%, rgba(0,0,0,1) 70%);
+
+    @media screen and (max-width: 420px) {
+        width:100%;
+       
+     }
 `;
 
 const Title = styled.h2`
