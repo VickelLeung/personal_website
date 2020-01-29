@@ -16,7 +16,9 @@ class Homepage extends React.Component{
         return(
         <Wrapper>
             <MainContainer>
-                <Quote>Sometimes things are meant to happen but it does not mean it is meant to be.</Quote>
+                <QuoteContainer>
+                    <Quote>Sometimes things are meant to happen but it does not mean it is meant to be.</Quote>
+                </QuoteContainer>
                 {/* <SocialMediaIcon>
                    <SocialContainer />
                 </SocialMediaIcon> */}
@@ -72,7 +74,7 @@ color:#F5B716;
     text-align:center;
     font-size: 2em;
     width: 70%;
-   
+    height:100%;
    }
 `
 
@@ -83,11 +85,10 @@ border: 1px solid black;
 background-color:#434242;
 
 @media screen and (max-width: 420px) {
-
     height:auto;
-    min-height: 50vh;
+    min-height: 0vh;
+    padding: 10%;
 }
-
 `;
 
 const SkillContainer = styled.div`
@@ -101,7 +102,7 @@ width:100%;
     display:flex;
     flex-direction:column;
     height:auto;
-    min-height: 35vh;
+  
     width:100%;
 }
 `
@@ -126,4 +127,11 @@ width:60%;
 
 const SocialMediaIcon = styled.div`
 
+`;
+
+const QuoteContainer = styled.div`
+ display:flex;
+ text-align:center;
+ justify-content:center;
+ height:100%;
 `;

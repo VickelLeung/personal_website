@@ -4,9 +4,7 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 const HobbyCard = (props) =>{
    
-    return(
-        <Wrapper>
-            <Flippy
+    return(<Flippy
                 flipOnHover={props.isHover} // default false
                 flipOnClick={true} // default false
                 flipDirection="horizontal" // horizontal or vertical
@@ -37,21 +35,20 @@ const HobbyCard = (props) =>{
                 </Description>
                 </BackSide>
             </Flippy>
-        </Wrapper>
     )
 }
 
 export {HobbyCard};
 
-const Wrapper = styled.div`
-height:100%;
-width:100%;
+// const Wrapper = styled.div`
+// height:100%;
+// width:100%;
 
-@media screen and (max-width: 420px) {
-  text-align:center;
- }
+// @media screen and (max-width: 420px) {
+//   text-align:center;
+//  }
 
-`;
+// `;
 
 const Title = styled.h2`
 text-align:center;

@@ -38,17 +38,17 @@ class Hobby extends React.Component {
     }
 }
 
-
 export {Hobby};
 
 const Wrapper = styled.div`
 display:flex;
 flex-direction:row;
-justify-content: center;
+justify-content: space-between;
 
 @media screen and (max-width: 420px) {
     display:flex;
     flex-direction:column;
+    align-items: center;
     justify-content: center;
  }
 `;

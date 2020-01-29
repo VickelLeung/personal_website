@@ -90,6 +90,10 @@ const SecondContainer = styled.div`
 width:40%;
 height:100%;
 border-left: 3px solid black;
+
+@media screen and (max-width: 420px) {
+    border-left: 1px solid white;
+ }
 `;
 
 const InformationBox = styled.div`
@@ -100,6 +104,7 @@ border-radius: 3%;
 
 @media screen and (max-width: 420px) {
    width: 100%;
+   border-radius: 5%;
 }
 `;
 
@@ -122,6 +127,8 @@ border-radius: 3%;
 
 @media screen and (max-width: 420px) {
     width: 100%;
+    border-radius:5%;
+    margin-top: 6%;
  }
 `;
 
@@ -134,14 +141,19 @@ margin-bottom:5%;
 
 @media screen and (max-width: 420px) {
     flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 `;
 
 const GeneralContainer = styled.div`
-position:relative;
 margin-left:40%;
 margin-right:6%;
 text-align:center;
+
+@media screen and (max-width: 420px) {
+margin:0 0;
+}
 `;
 // background-color:#434242;
 const TimeContainer = styled.div`
