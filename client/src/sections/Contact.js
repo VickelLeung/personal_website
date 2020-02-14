@@ -139,7 +139,6 @@ const InputField = styled(TextField)`
 }
 
 `;
-// border-color: #FDC500;
 
 const SubmitBtn = styled(Button)`
 .MuiTouchRipple-root{
@@ -160,15 +159,3 @@ margin: 8% 0;
 border-bottom: 1px solid black;
 
 `;
-
-// setupProxy
-// const proxy = require('http-proxy-middleware');
-// module.exports = function(app) {
-//   app.use(
-//     '/api',
-//     proxy({
-//       target: 'http://localhost:8080',
-//       changeOrigin: true,
-//     })
-//   );
-// };

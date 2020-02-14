@@ -2,7 +2,6 @@ import React from 'react';
 import Headroom from "react-headroom";
 import scrollToComponent from 'react-scroll-to-component';
 
-// import {NavigationBar} from "./component/navigationBar/NavigationBar";
 import { Homepage } from './sections/HomePage';
 import { AboutPage } from './sections/AboutPage';
 import styled from "styled-components";

@@ -4,8 +4,11 @@ import { PortfolioCard } from "../share-components/Cards/PortfolioCard";
 import { CardTitle } from "../share-components/Cards/CardTitle";
 import Calculator from "../Images/portfolio/calculator.png";
 import InfoRetrieve from "../Images/portfolio/inforetrieve.png";
-import SimonSays from "../Images/portfolio/simonsay.png";
-import TicTacToe from "../Images/portfolio/tictactoe.png";
+import SimonSays from "../Images/portfolio/simonsay.jpg";
+import TicTacToe from "../Images/portfolio/tictactoe.jpg";
+import Risk from "../Images/portfolio/risk.jpg";
+import Book from "../Images/portfolio/book.png";
+import Password from "../Images/portfolio/password.png";
 import { Parallax } from 'react-scroll-parallax';
 
 function Portfolio(){
@@ -27,7 +30,7 @@ function Portfolio(){
             </TitleContainer>
             <CardContainer>
                 <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} 
-                    imageCover={Calculator} title="Password Generator"
+                    imageCover={Password} title="Password Generator"
                     projectLink="https://github.com/VickelLeung/Password_generator_in_react"
                     description="A web application that generate random password for user. 
                     It also has the options to save into firebase database so user does not have to remember it."
@@ -38,7 +41,7 @@ function Portfolio(){
                     description="A fun game where user click on the sequence of colors after they are being showed a popup of colors."
                     />
                 <PortfolioCard  skill={[{name: "Java", icon: "fab fa-java fa-1x}"},{name: "Jsp", icon: "test2"}, {name:"MySql"}]} 
-                    imageCover={SimonSays} title="Book repository"
+                    imageCover={Book} title="Book repository"
                     projectLink="https://github.com/VickelLeung/SOEN387A2"
                     description="A book repository that keeps tracks of all records of any type of books."
                     />
@@ -69,20 +72,13 @@ function Portfolio(){
                     It is a basic calculator with only simple operations such as addition, substractions, multiplications and division. "
                     />
                 <PortfolioCard skill={[{name:"C++", icon:""}]} 
-                    imageCover={""} title="Risk"
+                    imageCover={Risk} title="Risk"
                     projectLink="https://github.com/VickelLeung/Risk-game"
                     description="A risk game made in C++ that simulate the same concepts of the board game of risk, where each play tries to conquer other territory. 
                     It is implemented with Round-Robin and using observer pattern to notify other components."
                     />
             </CardContainer>
         </ContentWrapper>
-
-            {/* <CardTitle>Software application</CardTitle>
-            <CardContainer>
-                <PortfolioCard title="Password Generator"/>
-                <PortfolioCard title="Simon Says"/>
-            </CardContainer> */}
-      
 
         </Wrapper>
     )

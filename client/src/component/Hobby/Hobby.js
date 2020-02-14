@@ -26,13 +26,11 @@ class Hobby extends React.Component {
     render(){
     return(
         <Wrapper>
-        {/* <HobbyContainer> */}
             <HobbyCard Icon={"fas fa-music fa-3x"} isHover={this.state.hoverVar} name={"Music"} description={"I enjoy listening and playing music instrument"}/>
             <HobbyCard Icon={"fas fa-gamepad fa-3x"} isHover={this.state.hoverVar} name={"Video Game"} description={"A gamer when I have free time"}/>
             <HobbyCard Icon={"fas fa-dumbbell fa-3x"} isHover={this.state.hoverVar} name={"Weightlifting"} description={"Weightlifting allow me to improve and challenge myself"}/>
             <HobbyCard Icon={"fas fa-plane fa-3x"} isHover={this.state.hoverVar} name={"Travel"} description={"Travel and explore new places"}/>
             <HobbyCard Icon={"fas fa-palette fa-3x"} isHover={this.state.hoverVar} name={"Art"} description={"A strong passion in creating art"}/>
-        {/* </HobbyContainer> */}
         </Wrapper>
     )
     }
@@ -52,5 +50,3 @@ justify-content: space-between;
     justify-content: center;
  }
 `;
-
-const Title = styled.h1``;

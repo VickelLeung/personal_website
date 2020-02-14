@@ -1,30 +1,34 @@
 {
   "files": {
     "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.585a6303.chunk.js",
-    "main.js.map": "/static/js/main.585a6303.chunk.js.map",
+    "main.js": "/static/js/main.6f43d35d.chunk.js",
+    "main.js.map": "/static/js/main.6f43d35d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ac92b4c.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ac92b4c.js.map",
     "static/css/2.07b9f559.chunk.css": "/static/css/2.07b9f559.chunk.css",
-    "static/js/2.46164162.chunk.js": "/static/js/2.46164162.chunk.js",
-    "static/js/2.46164162.chunk.js.map": "/static/js/2.46164162.chunk.js.map",
+    "static/js/2.969d6410.chunk.js": "/static/js/2.969d6410.chunk.js",
+    "static/js/2.969d6410.chunk.js.map": "/static/js/2.969d6410.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ff25f1cbaf2e2e052f4298729620ba92.js": "/precache-manifest.ff25f1cbaf2e2e052f4298729620ba92.js",
+    "precache-manifest.3dc0d461146f355ce97b340245146159.js": "/precache-manifest.3dc0d461146f355ce97b340245146159.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.07b9f559.chunk.css.map": "/static/css/2.07b9f559.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.46164162.chunk.js.LICENSE": "/static/js/2.46164162.chunk.js.LICENSE",
-    "static/media/inforetrieve.png": "/static/media/inforetrieve.9b0a6fe7.png",
+    "static/js/2.969d6410.chunk.js.LICENSE": "/static/js/2.969d6410.chunk.js.LICENSE",
+    "static/media/backgroundImg.png": "/static/media/backgroundImg.6b0ac49f.png",
+    "static/media/inforetrieve.png": "/static/media/inforetrieve.b613cb60.png",
+    "static/media/mobileImg.png": "/static/media/mobileImg.e1d5049e.png",
+    "static/media/password.png": "/static/media/password.ac634c34.png",
     "static/media/resume.pdf": "/static/media/resume.3fc3b773.pdf",
-    "static/media/simonsay.png": "/static/media/simonsay.22b37099.png",
+    "static/media/risk.jpg": "/static/media/risk.bb407595.jpg",
+    "static/media/simonsay.jpg": "/static/media/simonsay.fde67aa2.jpg",
     "static/media/software.png": "/static/media/software.e559f09f.png",
-    "static/media/tictactoe.png": "/static/media/tictactoe.1fc37423.png"
+    "static/media/tictactoe.jpg": "/static/media/tictactoe.55f167dd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2ac92b4c.js",
     "static/css/2.07b9f559.chunk.css",
-    "static/js/2.46164162.chunk.js",
+    "static/js/2.969d6410.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.585a6303.chunk.js"
+    "static/js/main.6f43d35d.chunk.js"
   ]
 }

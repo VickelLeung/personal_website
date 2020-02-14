@@ -155,11 +155,11 @@ text-align:center;
 margin:0 0;
 }
 `;
-// background-color:#434242;
+
 const TimeContainer = styled.div`
 background-color: #413F3F;
 `;
-// background-color: #E5E5E5;
+
 const ImageBox = styled.div`
 
 `;

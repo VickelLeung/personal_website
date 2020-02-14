@@ -7,6 +7,8 @@ import webDesign from "../Images/webDesign.png";
 import webDeveloper from "../Images/webDeveloper.png";
 import software from "../Images/software.png";
 import {SocialContainer} from "../component/SocialContainer/SocialContainer"
+import backgroundImg from "../Images/backgroundImg.png";
+import mobileImg from "../Images/mobileImg.png"
 
 // https://patricktran.github.io/react-image-fade-in/?knob-opacityTransition%20%28seconds%29=3&knob-src=https%3A%2F%2Fraw.githubusercontent.com%2Fpatricktran%2Freact-image-fade-in%2Fmaster%2Fnismo-dog.jpg&selectedKind=ImageFadeIn&selectedStory=with%20image&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel
 
@@ -15,10 +17,10 @@ class Homepage extends React.Component{
 
         return(
         <Wrapper>
-            <MainContainer>
-                <QuoteContainer>
+            <MainContainer >
+                {/* <QuoteContainer>
                     <Quote>Sometimes things are meant to happen but it does not mean it is meant to be.</Quote>
-                </QuoteContainer>
+                </QuoteContainer> */}
                 {/* <SocialMediaIcon>
                    <SocialContainer />
                 </SocialMediaIcon> */}
@@ -40,8 +42,7 @@ class Homepage extends React.Component{
                         <Skill title="windowsOs" iconImg="fab fa-windows fa-2x" />
                         <Skill title="macOs" iconImg="fab fa-apple fa-2x" />
                    </SkillCard>
-                   {/* Javascript, Java, C++, NodeJS, MySql, MongoDB, Github, Gitlab, Visual Studio, Eclipse, WindowsOS, MacOS */}
-                   
+           
                 </LanguageContainer>
                 <CardContainer>
                     <Card image={webDesign}>UI/UX</Card>
@@ -77,17 +78,22 @@ color:#F5B716;
     height:100%;
    }
 `
-
+// background-color:#434242;
 const MainContainer = styled.div`
 height:auto;
 min-height: 60vh;
-border: 1px solid black;
-background-color:#434242;
+
+background-image: url(${backgroundImg});
+background-position: center;
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+max-width: 100%;
 
 @media screen and (max-width: 420px) {
-    height:auto;
-    min-height: 0vh;
-    padding: 10%;
+    min-height: 40vh;
+    background-size: contain;
+    background-position: top 10% center;
 }
 `;
 

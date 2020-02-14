@@ -8,7 +8,6 @@ const SocialContainer =()=>{
         <SocialIcon link="" icon="fab fa-github fa-2x"/>
         <SocialIcon link="" icon="fab fa-linkedin-in fa-2x"/>
         <SocialIcon link="" icon="fab fa-facebook-f fa-2x"/>
-        {/* <SocialIcon link="" icon="fab fa-github fa-2x"/> */}
     </Wrapper>
     )
 }
