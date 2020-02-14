@@ -123,7 +123,9 @@ width:100%;
 const TitleContainer = styled.div`
 text-align:center `;
 
-const Title = styled.h2``;
+const Title = styled.h1`
+font-size: 2.2em;
+`;
 
 const InputField = styled(TextField)`
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{

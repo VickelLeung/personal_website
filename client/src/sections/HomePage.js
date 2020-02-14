@@ -8,7 +8,6 @@ import webDeveloper from "../Images/webDeveloper.png";
 import software from "../Images/software.png";
 import {SocialContainer} from "../component/SocialContainer/SocialContainer"
 import backgroundImg from "../Images/backgroundImg.png";
-import mobileImg from "../Images/mobileImg.png"
 
 // https://patricktran.github.io/react-image-fade-in/?knob-opacityTransition%20%28seconds%29=3&knob-src=https%3A%2F%2Fraw.githubusercontent.com%2Fpatricktran%2Freact-image-fade-in%2Fmaster%2Fnismo-dog.jpg&selectedKind=ImageFadeIn&selectedStory=with%20image&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel
 
@@ -18,29 +17,23 @@ class Homepage extends React.Component{
         return(
         <Wrapper>
             <MainContainer >
-                {/* <QuoteContainer>
-                    <Quote>Sometimes things are meant to happen but it does not mean it is meant to be.</Quote>
-                </QuoteContainer> */}
-                {/* <SocialMediaIcon>
-                   <SocialContainer />
-                </SocialMediaIcon> */}
             </MainContainer>
             <SkillContainer>
                 <LanguageContainer>
                    <SkillCard title="Languages and tools" >
-                        <Skill title="html5" iconImg="fab fa-html5 fa-2x"/>
-                        <Skill title="css3" iconImg="fab fa-css3-alt fa-2x"/>
-                        <Skill title="javascript" iconImg="fab fa-js-square fa-2x"/>
-                        <Skill title="reactJs" iconImg="fab fa-react fa-2x"/>
-                        <Skill title="java" iconImg="fab fa-java fa-2x"/>
-                        <Skill title="c++" altImg="https://img.icons8.com/ios-filled/30/000000/c-plus-plus-logo.png"/>
-                        <Skill title="nodeJs" iconImg="fab fa-node fa-2x"/>
-                        <Skill title="mysql" altImg="https://img.icons8.com/ios-filled/30/000000/mysql-logo.png" />
-                        <Skill title="mongoDb" altImg="https://img.icons8.com/color/30/000000/mongodb.png" />
-                        <Skill title="github" iconImg="fab fa-github-square fa-2x"/>
-                        <Skill title="visual studio" altImg="https://img.icons8.com/ios-glyphs/30/000000/visual-studio.png" />
-                        <Skill title="windowsOs" iconImg="fab fa-windows fa-2x" />
-                        <Skill title="macOs" iconImg="fab fa-apple fa-2x" />
+                        <Skill title="HTML5" iconImg="fab fa-html5 fa-2x"/>
+                        <Skill title="CSS3" iconImg="fab fa-css3-alt fa-2x"/>
+                        <Skill title="JavaScript" iconImg="fab fa-js-square fa-2x"/>
+                        <Skill title="ReactJs" iconImg="fab fa-react fa-2x"/>
+                        <Skill title="Java" iconImg="fab fa-java fa-2x"/>
+                        <Skill title="C++" altImg="https://img.icons8.com/ios-filled/30/000000/c-plus-plus-logo.png"/>
+                        <Skill title="NodeJs" iconImg="fab fa-node fa-2x"/>
+                        <Skill title="Mysql" altImg="https://img.icons8.com/ios-filled/30/000000/mysql-logo.png" />
+                        <Skill title="mMngoDb" altImg="https://img.icons8.com/color/30/000000/mongodb.png" />
+                        <Skill title="Github" iconImg="fab fa-github-square fa-2x"/>
+                        <Skill title="Visual Studio" altImg="https://img.icons8.com/ios-glyphs/30/000000/visual-studio.png" />
+                        <Skill title="WindowsOs" iconImg="fab fa-windows fa-2x" />
+                        <Skill title="MacOs" iconImg="fab fa-apple fa-2x" />
                    </SkillCard>
            
                 </LanguageContainer>

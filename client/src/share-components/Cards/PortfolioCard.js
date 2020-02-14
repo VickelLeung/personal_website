@@ -15,7 +15,7 @@ import Img from "../../Images/portfolio/calculator.png";
 
 function PortfolioCard(props){
 
-  const { imageCover, title, description ,icon, skill, projectLink } = props;
+  const { imageCover, title, description ,icon, skill, projectLink, websiteLink } = props;
 
   let chip = skill != undefined && skill.map((item)=>{
     return  <Chip label={<i className={item.icon}><span> {item.name}</span></i>}></Chip>
@@ -24,6 +24,8 @@ function PortfolioCard(props){
     return(      
         <Wrapper>
           <Card >   
+
+            <span style={{margin: "5%"}}>
             <CardMedia
               component="img"
               style={{objectFit:"contain"}}
@@ -32,30 +34,32 @@ function PortfolioCard(props){
               image={imageCover}
               title="Click for demo"
             />
-            <CardContent style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "0 3%"}}>
-              <Typography gutterBottom variant="h5" component="h2">
-                {title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-               {description}
-              </Typography>
-              {chip}
+            </span>
+         
+              <CardContent style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "0 3%"}}>
+                <SubTitle>
+                  {title}
+                </SubTitle>
 
-            </CardContent>
-        
-          <CardActions>
+                <Description >
+                {description}
+                </Description>
+
+                {chip}
+
+              </CardContent>
+      <CardActions>
             <LinkContainer>
-                {/* <LanguageContainer>
-                  <Chip label={<i className={icon}><span> ReactJs</span></i>}></Chip>
-                </LanguageContainer> */}
-                <CodeContainer>
-                  {projectLink === undefined? null: <Button href={projectLink} target="_blank" ><i class="fas fa-file-code fa-2x" /></Button>}
                 
+                <CodeContainer>
+                {websiteLink === undefined? null : <Button href={websiteLink} target="_blank" ><i class="fas fa-globe fa-2x" /></Button>}
+                  {projectLink === undefined? null: <Button href={projectLink} target="_blank" ><i class="fas fa-file-code fa-2x" /></Button>}
                 </CodeContainer>
+
             </LinkContainer>
           </CardActions>
       </Card>
-        </Wrapper>
+    </Wrapper>
     )
 }
 
@@ -68,15 +72,9 @@ text-align:center;
 margin: 0 3%;
 margin-bottom: 4%;
 
-&:hover {
-    background-color: rgba(0,0,0,0.05); /* Black w/ opacity */
-  }
-
   @media screen and (max-width: 420px) {
-    width: 50%;
-   
+    width: 50%; 
  }
-
 `;
 
 const Title = styled.h2`color:#F5B716;`;
@@ -89,8 +87,7 @@ width:10em;
 object-fit: cover;
 
 `;
-// display:flex;
-// justify-content: space-between;
+
 const LinkContainer = styled.div`
 text-align:right;
 width:100%;
@@ -106,4 +103,6 @@ text-align:center;
 
 const CodeContainer = styled.div``;
 
-const LanguageContainer = styled.div``;
+const SubTitle = styled.h2``;
+
+const Description = styled.p``;

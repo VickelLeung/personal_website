@@ -34,6 +34,7 @@ function Portfolio(){
                     projectLink="https://github.com/VickelLeung/Password_generator_in_react"
                     description="A web application that generate random password for user. 
                     It also has the options to save into firebase database so user does not have to remember it."
+                    websiteLink="https://passwordgeneratorwithreact.herokuapp.com/"
                     />
                 <PortfolioCard  skill={[{name:"ReactJs", icon:"fab fa-react fa-1x"}]} 
                     imageCover={SimonSays} title="Simon Says"
@@ -61,16 +62,19 @@ function Portfolio(){
                     documents. It can also estimate the relevance documents using bm25. "
                 
                     />
+
                 <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
                     imageCover={TicTacToe} title="Tic Tac Toe"
                     projectLink="https://github.com/VickelLeung/TicTacToe_2.0_Android"
                     description="A very simple android applications about tic tac toe where using choose to either play against the computer or another player."
                     />
+
                 <PortfolioCard skill={[{name:"Java", icon:"fab fa-java fa-1x"}]} 
                     imageCover={Calculator} title="Calculator"
                     description="A calculator built with Java and Swing as interface. 
                     It is a basic calculator with only simple operations such as addition, substractions, multiplications and division. "
                     />
+                    
                 <PortfolioCard skill={[{name:"C++", icon:""}]} 
                     imageCover={Risk} title="Risk"
                     projectLink="https://github.com/VickelLeung/Risk-game"
@@ -130,4 +134,5 @@ justify-content: center; /* Horizontal center alignment */
 
 const Title = styled.h2`
 margin: 4% 0;
+font-size:2.2em;
 `;

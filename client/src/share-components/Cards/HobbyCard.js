@@ -55,7 +55,7 @@ text-align:center;
 color:white;
 `;
 
-const Description = styled.h2`
+const Description = styled.h3`
 text-align:center;
 color:white;
 `;

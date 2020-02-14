@@ -19,19 +19,17 @@ class AboutPage extends React.Component{
                         </ImageBox> */}
                         <div>
                             <InformationBox>
-                                <Header>Vickel Leung</Header>
-                                {/* <SubTitle>Web Developer</SubTitle> */}
+                    
                                 <Information>
-                                    Hello there! <br/><br />
+                                    <Welcome>Hello there!</Welcome> <br/><br />
                                     
-                                    I am a web developer that enjoys creating things from scratch to something awesome!
+                                    I am a web/mobile developer that enjoys creating things that people will use it!
                                     Strong passion in learning new technology and using it to improve my skill. <br /> <br />
 
-                                    I am not just all coding. If I have free time, I do make the most out of it by relaxing my body.
-                                    My belief is that a healthy body will give a healthy mind. For that reason, I always try to eat heatlhy and go to gym regularly. <br /> <br/>
+                                    I am not just all coding. If I have time I enjoy doing some of my hobbies such as art, music, and weightlifting.
+                                    I have a strong belief that a healthy body will give a healthy mind. For that reason, I always try to eat heatlhy and go to gym regularly. <br /> <br/>
                                     
                                     I want to make a difference in the world by writing one line code at a time.
-                                    Thanks for reading my page.
 
                                 </Information>
                             </InformationBox>
@@ -43,7 +41,7 @@ class AboutPage extends React.Component{
                     <SecondContainer>
                         {/* <FactWrapper> */}
                             <FactBox>
-                                <Header>Fun facts about me</Header>
+                                <Welcome>Fun facts about me</Welcome>
                                 <BulletPoints>1- I love trying new food unless it's bugs</BulletPoints>
                                 <BulletPoints>2- I have never broken a bone before</BulletPoints>
                                 <BulletPoints>3- Funko pop collector!</BulletPoints>
@@ -72,9 +70,11 @@ class AboutPage extends React.Component{
 
 export {AboutPage};
 
-const Title = styled.h1`text-align:center;`;
+const Title = styled.h1`
+text-align:center;
+font-size: 2.2em;
+`;
 
-const SubTitle = styled.h3``;
 
 const Wrapper = styled.div`
 height:auto;
@@ -107,8 +107,6 @@ border-radius: 3%;
    border-radius: 5%;
 }
 `;
-
-const Header = styled.h1``;
 
 const Information = styled.p`
 text-align:left;
@@ -174,5 +172,11 @@ const ResumeBtn = styled(Button)`
 .MuiButton-label{
     color: white;
 }
+`;
 
+const Welcome = styled.span`
+background-color: black;
+color:white;
+padding: 1%;
+font-size: 1.3em;
 `;
